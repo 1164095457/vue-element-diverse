@@ -11,6 +11,7 @@
     "core-js": "^3.6.5",
     "dayjs": "^1.9.7",
     "echarts": "^4.9.0",
+    "element-tiptap": "^1.26.2",
     "element-ui": "^2.14.1",
     "file-saver": "^2.0.5",
     "vue": "^2.6.11",

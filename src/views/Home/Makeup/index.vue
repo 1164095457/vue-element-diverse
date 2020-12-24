@@ -16,7 +16,7 @@
         <p>
             <i class="el-icon-user">：欢迎持续关注vue-element-diverse</i>
         </p>
-            <i class="iconfont icon-github">：sadsad</i>
+            <i class="iconfont icon-github">：https://github.com/1164095457/vue-element-diverse</i>
         <p>
             
         </p>

@@ -31,6 +31,8 @@ export default {
                 { "name":"星期三","value":"160"},
                 { "name":"星期四","value":"100"},
                 { "name":"星期五","value":"200"},
+                { "name":"星期六","value":"150"},
+                { "name":"星期日","value":"10"},
             ]
             this.allData = res
             //  获取完数据更新图表

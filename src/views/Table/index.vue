@@ -7,10 +7,14 @@
             </el-breadcrumb>
             <el-divider></el-divider>
 
+            <el-button size="mini" @click="tables(tableData.length)">选中几条</el-button>
+
             <el-table
                 :data="tableData.slice((currentPage - 1) * pagesize, currentPage*pagesize)"
                 border
-                style="width: 100%">
+                style="width: 100%"
+                @selection-change="handleSelectionChange"
+                >
                 <el-table-column type="index" width="50">
                 </el-table-column>
                 <el-table-column type="selection" width="55">
@@ -101,7 +105,8 @@ export default {
         { date: '2020 10:15:47 GMT+0800', title: 'Make up', article: 'v-e-d', content: 'I will try my best to be as close as possible to my ideal', region: 'Guangzhou', state: 2, user:' lin',score:5 },
         { date: '2020 10:15:47 GMT+0800', title: 'Make up', article: 'v-e-d', content: 'I will try my best to be as close as possible to my ideal', region: 'Guangzhou', state: 1, user:' lin',score:2.5 },
         { date: '2020 10:15:47 GMT+0800', title: 'Make up', article: 'v-e-d', content: 'I will try my best to be as close as possible to my ideal', region: 'Guangzhou', state: 2, user:' lin',score:5 },
-        ]
+        ],
+        selections:[]
         }
     },
     created(){
@@ -116,6 +121,18 @@ export default {
         },
         handleCurrentChange(val) {
             this.currentPage = val;
+        },
+        handleSelectionChange(val){
+            this.selections = val.map(e =>{
+                return e
+            })
+        },
+        tables(){
+            let item = this.selections
+            this.$message({
+                message:`你选中了${item.length}条数据`,
+                type:'success'
+            })
         }
     },
 }
