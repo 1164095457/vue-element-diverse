@@ -12,9 +12,7 @@ vue-element-diverse专为开发者搭建的模板，让你把时间都放在业�
 
 
 
-![image-20201224110945263](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20201224110945263.png)
-
-
+![image-20201224110945263](\3ec17efa531208d13f52d35bd9913ed.png)
 
 
 
