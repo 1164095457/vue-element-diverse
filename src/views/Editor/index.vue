@@ -13,11 +13,11 @@
                 v-model="content"
                 :extensions="extensions"
                 lang="zh"
-
               />
             </el-col>
+            
           </el-row>
-           
+         
         </el-card>
 
         

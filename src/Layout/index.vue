@@ -59,15 +59,17 @@
                             </el-image>
                             </div>
                            <div style="cursor:pointer;">
-                                <el-dropdown trigger="click">
-                            <span class="el-dropdown-link">
-                                <i class="el-icon-arrow-down el-icon--right"></i>
-                            </span>
-                            <el-dropdown-menu slot="dropdown">
-                                <el-dropdown-item>设置</el-dropdown-item>
-                                <el-dropdown-item>退出</el-dropdown-item>
-                            </el-dropdown-menu>
-                            </el-dropdown>
+                                <el-dropdown trigger="click" >
+                                    <span class="el-dropdown-link">
+                                        <i class="el-icon-arrow-down el-icon--right"></i>
+                                    </span>
+                                    <el-dropdown-menu slot="dropdown">
+                                        <el-dropdown-item>设置</el-dropdown-item>
+                                        <el-dropdown-item>
+                                            <span @click="login">退出</span>
+                                        </el-dropdown-item>
+                                    </el-dropdown-menu>
+                                 </el-dropdown>
                            </div>
                         </div>
                     </div>
@@ -106,6 +108,9 @@
         handleClose(){},
         getPath(){
             this.defaultUrl = this.$route.path
+        },
+        login(){
+            this.$router.push('/login')
         }
     }
   };
